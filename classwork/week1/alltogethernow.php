@@ -12,7 +12,5 @@
     echo "<p>" . $myName . "<br />";
     echo $myAge . "<br />" . "</p>";
     ?>
-
-
   </body>
 </html>

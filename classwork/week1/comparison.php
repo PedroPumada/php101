@@ -7,6 +7,7 @@
     <p>Write a comparison that is true</p>
     <form>
     <label>Input:</label><input type="text" name="firstInput"></input>
+    
     </form>
     <p>
       <?php

@@ -13,8 +13,8 @@
             break;
         case 1:
         case 2:
-        case _:
-        case _:
+        case 3:
+        case 4:
         case 5:
             echo '$i is somewhere between 1 and 5.';
             break;

@@ -16,6 +16,16 @@
       // check to see if "?" exists
       // with the position of "?" return a substring of the query arguments
       // print out each query string as a formatted string
+      foreach ($urls as $url) {
+        $questionPos = strpos($url, "?");
+        if ($questionPos !== false) {
+          $endPos = strlen($url);
+          $endPos++;
+          $questionPos++;
+          $queryArg = trim(substr($url, $questionPos, $endPos));
+          echo '<p>Query argument: ' . $queryArg . '</p>';
+        }
+      }
     ?>
   </body>
 </html>

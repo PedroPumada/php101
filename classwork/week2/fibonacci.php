@@ -9,6 +9,14 @@
       // Create a function that takes a number $n
       // if the number $n is equal to 1 or 2 then return 1
       // else return the function itself to proceed to the next fibonacci number
+    function fibonacci ($n) {
+      if ($n == 1 OR $n == 2) {
+        return 1;
+      } else {
+        return fibonacci($n);
+      }
+    }
+    echo '<p>' . fibonacci(3); '</p>';
     ?>
   </body>
 </html>

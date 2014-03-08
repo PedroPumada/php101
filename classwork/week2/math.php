@@ -10,8 +10,8 @@
     $nameLength = strlen($fullName);
     $result = round($nameLength * M_PI, 3);
     echo '<p>' . ceil($result) . '</p>';
-    $randChar = rand(0, strlen($fullName));
-    echo substr($fullName, $randChar, $randChar);
+    $randChar = rand(0, strlen($fullName) - 1);
+    echo substr($fullName, $randChar, 1);
     // multiply that by M_PI and round it to the third decimal place
     // print out the result
     // then print out the ceiling value of the result

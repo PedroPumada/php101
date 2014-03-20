@@ -14,6 +14,33 @@
       // Next modify one of the methods that override your parent class
       // To call the parent methed within the child method
       // Pass an argument to that method and have that return and print to the output
+    class Insurance_Agency {
+      // properties of an agency
+      public $address = "123 Willow Dr";
+      public $name = "Correll Insurance";
+      public $principal = "Peter Zink";
+      // methods to display properties
+      public function display_address() {
+        return $this->address;
+      }
+      public function display_agency() {
+        return $this->name;
+      }
+      public function display_principal() {
+        return $this->principal;
+      }
+    }
+    class Personal_Lines_Agency extends Insurance_Agency {
+      public $focus = "Auto Insurance";
+      // Personal Lines methods
+      public function display_focus() {
+        return $this->focus;
+      }
+    }
+
+    $personal_lines = new Personal_Lines_Agency;
+    echo '<p>' . $personal_lines->display_agency() . '</p>';
+    echo '<p>' . $personal_lines->display_focus() . '</p>';
     ?>
   </body>
 </html>
